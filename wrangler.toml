@@ -8,7 +8,7 @@ crons = []
 [vars]
 TG_BOT_USERNAME = "GLTAdminBot"
 TG_BOT_TIMEZONE = "Asia/Hong_Kong"
-TG_SPAM_RE = "拍车|门头|小白可带|无风险|看过来|拍汽车|公群已开|收款码|盘口|频道|搜群机器人|个人|主页|免费|登录|无需|私信|点我|电报|问讯|免vpn|联系|各类|引流|详情|头像|咨询|梯子|翻墙|接洽|vpn免费|请进|询问|征询|粉丝|点赞|网络专线|园区"
+TG_SPAM_RE = "力穷|计尽|快马|虚拟币|黑U|项目|滈汸|获取|掃碼盜黑|拍车|门头|小白可带|无风险|看过来|拍汽车|公群已开|收款码|盘口|频道|搜群机器人|个人|主页|免费|登录|无需|私信|点我|电报|问讯|免vpn|联系|各类|引流|详情|头像|咨询|梯子|翻墙|接洽|vpn免费|请进|询问|征询|粉丝|点赞|网络专线|园区"
 TG_ALLOWED_CHAT_USERNAMES = "gltbottest,gaplo917,gaplotechd"
 TG_SILENCE_CONSENSUS_COMMAND = "/silence"
 TG_SILENCE_CONSENSUS_MIN_COUNT = 3
