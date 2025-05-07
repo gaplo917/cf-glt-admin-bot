@@ -97,7 +97,8 @@ async function handleRequest(request: Request<unknown, IncomingRequestCfProperti
               mid: rmid,
               question: template(env.TG_SILENCE_CONSENSUS_POLL_QUESTION_TEMPLATE, {
                 datetime: unixToTimezone(unixEpoch(), env.TG_BOT_TIMEZONE),
-                initUsername: username,
+                initUsername: username.replace('_', '\\_'),
+                targetUsername: targetUsername.replace('_', '\\_'),
                 pollDuration: (+env.TG_SILENCE_CONSENSUS_POLL_DURATION / 60 / 60).toFixed(0),
                 minCount: +env.TG_SILENCE_CONSENSUS_MIN_COUNT,
                 positiveRatio: (+env.TG_SILENCE_CONSENSUS_POSITIVE_RATIO * 100).toFixed(0),

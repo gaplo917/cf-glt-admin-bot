@@ -11,8 +11,8 @@ declare namespace Cloudflare {
 		TG_SILENCE_CONSENSUS_POSITIVE_RATIO: 0.7;
 		TG_SILENCE_CONSENSUS_RESTRICT_DURATION: 259200;
 		TG_SILENCE_CONSENSUS_POLL_DURATION: 86400;
-		TG_SILENCE_CONSENSUS_POLL_OPTIONS: "支持,不支持,棄權";
-		TG_SILENCE_CONSENSUS_POLL_QUESTION_TEMPLATE: "{datetime} HKT @{initUsername} 動議了群組共識投票。若 {pollDuration} 小時內總投票數超過 {minCount} 票以及支持百分比超過或等如 {positiveRatio}，系統將會立即限制該會員發言 {restrictDuration} 小時。\n\n當支持百分比下跌少於 {positiveRatio}，系統將會立即解除限制。";
+		TG_SILENCE_CONSENSUS_POLL_OPTIONS: "贊成,反對,棄權";
+		TG_SILENCE_CONSENSUS_POLL_QUESTION_TEMPLATE: "@{initUsername} 提議禁言 @{targetUsername} ，請投票！\n\n若 {pollDuration} 小時內，最少有 {minCount} 票 及 最少 {positiveRatio}% 票投贊成，系統將會立即限制該會員發言 {restrictDuration} 小時。當少於 {positiveRatio}% 票投贊成，系統將會立即解除限制。{datetime} HKT";
 		TG_SILENCE_CONSENSUS_POLL_STATUS_TEMPLATE: "{datetime} HKT\n總投票數: {totalCount}\n支持百分比: {positiveRatio}%\n@{targetUsername} 狀態: {targetUserStatus}";
 		TG_SILENCE_CONSENSUS_POLL_USER_STATUS_FREE_TEMPLATE: "自由";
 		TG_SILENCE_CONSENSUS_POLL_USER_STATUS_FREE_WITH_GRACE_TEMPLATE: "自由，變動將於 1 分鐘後更新";
